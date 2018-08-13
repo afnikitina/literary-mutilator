@@ -4,18 +4,68 @@
 		<meta charset="utf-8">
 		<title>Literary Mutilator</title>
 
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
+
 		<p>Suspendisse laoreet eleifend justo nec elementum. Quisque ac malesuada turpis, et suscipit neque. Maecenas bibendum velit risus, nec tempus lacus sodales id. Praesent lacinia tristique ipsum id maximus. Nulla ultricies sodales hendrerit. Sed id eros cursus, ornare urna quis, tristique orci. Nunc ex dui, hendrerit a aliquam eu, iaculis in leo. Suspendisse nec ante elementum, suscipit nunc eget, mattis lectus. Donec non quam odio. Maecenas gravida ante et turpis ullamcorper, in malesuada nibh hendrerit. Morbi tincidunt lobortis nisl. Vestibulum accumsan ornare lacus. Fusce velit erat, commodo a tempor sed, mattis eget mi. Nunc tortor lectus, venenatis quis turpis vel, tempus cursus felis. Nulla at scelerisque dui. Suspendisse finibus euismod tellus, vitae semper diam.</p>
 		<p>In condimentum id ipsum in malesuada. Etiam ultrices aliquet erat. Maecenas sit amet leo tincidunt, aliquam ipsum vel, eleifend nisi. Donec vel tortor in quam suscipit scelerisque. Donec vitae lacus risus. Morbi scelerisque, erat quis aliquam cursus, sem nisi placerat quam, a faucibus massa ipsum nec lectus. Suspendisse diam nisl, auctor at egestas eu, congue a mi. Ut nec sagittis nisi. Curabitur gravida odio at est dictum feugiat. Pellentesque elementum feugiat ligula ac finibus. Praesent justo mauris, lobortis at hendrerit vel, vehicula id dolor. Cras eu vehicula nulla.</p>
 		<p>Quisque tristique tellus a nisi convallis, at gravida justo finibus. Praesent at dolor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In aliquet pulvinar mi non pretium. Proin ultricies fringilla urna, sit amet tincidunt purus consectetur hendrerit. Pellentesque rhoncus lectus facilisis auctor scelerisque. Nam vehicula, purus ut rutrum malesuada, purus justo volutpat nunc, consequat hendrerit neque sem semper mauris. Phasellus quis est a sem fermentum iaculis. Integer ornare est dui, mattis faucibus mauris bibendum vitae. Fusce interdum congue mauris, ac bibendum lectus imperdiet vel. Phasellus rhoncus ligula at interdum auctor.</p>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<h2>Find / Replace</h2>
+					<form id="replace">
+
+					</form>
+				</div>
+				<div class="col-6">
+					<h2>Change Color</h2>
+					<form id="change-color">
+
+					</form>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+
+
 		<form>
 
 
 
 
 			<input type="text" class="form-control" id="pattern" name="pattern" placeholder="Enter Regular Expression">
-			<button type="button" class="btn btn-primary" onclick="">Find</button>
+
+
+
+			<input class="form-control" type="text" placeholder="Default input">
+			<button class="btn btn-lg btn-primary" type="button">Primary</button>
 
 
 		</form>
@@ -25,6 +75,9 @@
 		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js" integrity="sha384-zPwDDZkj9/CM2d74L+dd2WTHeYF/A9Ofy7JjxlVASlm7rwhH1lL5dfWqHwYALj/7" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 		<!-- Your JavaScript Form Validator -->
 		<script type="application/javascript" src="scripts/literary-mutilator.js"></script>
