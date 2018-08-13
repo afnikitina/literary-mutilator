@@ -5,7 +5,7 @@
 		<title>Literary Mutilator</title>
 
 		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" integrity="sha384-2QMA5oZ3MEXJddkHyZE/e/C1bd30ZUPdzqHrsaHMP3aGDbPA9yh77XDHXC9Imxw+" crossorigin="anonymous">
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -16,65 +16,67 @@
 		<p>Quisque tristique tellus a nisi convallis, at gravida justo finibus. Praesent at dolor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In aliquet pulvinar mi non pretium. Proin ultricies fringilla urna, sit amet tincidunt purus consectetur hendrerit. Pellentesque rhoncus lectus facilisis auctor scelerisque. Nam vehicula, purus ut rutrum malesuada, purus justo volutpat nunc, consequat hendrerit neque sem semper mauris. Phasellus quis est a sem fermentum iaculis. Integer ornare est dui, mattis faucibus mauris bibendum vitae. Fusce interdum congue mauris, ac bibendum lectus imperdiet vel. Phasellus rhoncus ligula at interdum auctor.</p>
 
 
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-6">
-					<h2>Find / Replace</h2>
-					<form id="replace">
-
+				<div class="col-md-6">
+					<h2 class="text-center">Find / Replace</h2>
+					<form id="form-replace">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="find">Find</label>
+										<input type="text" class="form-control" id="find" aria-describedby="findHelp" placeholder="Replace this pattern">
+										<small id="findHelp" class="form-text text-muted">Please enter the pattern to replace.</small>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="replace">Replace</label>
+										<input type="text" class="form-control" id="replace" aria-describedby="replaceHelp" placeholder="with this pattern">
+										<small id="replaceHelp" class="form-text text-muted">Please enter the pattern to replace with.</small>
+									</div>
+								</div>
+							</div><!--row-->
+							<div class="row">
+								<button type="button" class="btn btn-primary">Replace Next</button>
+								<button type="button" class="btn btn-primary">Replace All</button>
+								<button type="button" class="btn btn-warning">Reset</button>
+							</div>
+						</div><!--container-->
 					</form>
 				</div>
-				<div class="col-6">
+				<div class="col-md-3">
 					<h2>Change Color</h2>
 					<form id="change-color">
+						<div class="container">
+							<div class="row">
 
+								<div class="row">
+									<button type="button" class="btn btn-danger">Change to Red</button>
+									<button type="button" class="btn btn-primary">Change to Blue</button>
+									<button type="button" class="btn btn-success">Change to Green</button>
+								</div>
+
+
+							</div><!--row-->
+						</div><!--container-->
 					</form>
 				</div>
-			</div>
+				<div class="col-md-3">
+					<h2>RegEx</h2>
+					<form id="use-regex">
 
-
-
-		</div>
-
-		<form>
-			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Check me out</label>
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-
-
-
-		<form>
-
-
-
-
-			<input type="text" class="form-control" id="pattern" name="pattern" placeholder="Enter Regular Expression">
-
-
-
-			<input class="form-control" type="text" placeholder="Default input">
-			<button class="btn btn-lg btn-primary" type="button">Primary</button>
-
-
-		</form>
+					</form>
+				</div><!--row-->
+			</div><!--container-fluid-->
 
 
 		<!-- jQuery Form, Additional Methods, Validate -->
-		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>-->
+		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>-->
+		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>-->
+		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>-->
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js" integrity="sha384-zPwDDZkj9/CM2d74L+dd2WTHeYF/A9Ofy7JjxlVASlm7rwhH1lL5dfWqHwYALj/7" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -82,11 +84,4 @@
 		<!-- Your JavaScript Form Validator -->
 		<script type="application/javascript" src="scripts/literary-mutilator.js"></script>
 	</body>
-
-
-
-
-
-
-
 </html>
