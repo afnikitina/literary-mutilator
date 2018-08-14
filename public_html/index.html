@@ -39,9 +39,9 @@
 								</div>
 							</div><!--row-->
 							<div class="row">
-								<button type="button" class="btn btn-primary">Replace First</button>
-								<button type="button" class="btn btn-primary">Replace All</button>
-								<button type="button" class="btn btn-warning">Reset</button>
+								<button type="button" class="btn btn-primary" onclick="replaceFirst()">Replace First</button>
+								<button type="button" class="btn btn-primary" onclick="replaceAll()">Replace All</button>
+								<button type="button" class="btn btn-warning" onclick="resetAll()">Reset</button>
 							</div>
 						</div><!--container-->
 					</form>
@@ -63,19 +63,19 @@
 					</form>
 				</div>
 				<div class="col-md-3">
-					<h2 class="text-left">Regular Expressions</h2>
-					<form id="use-regex">
+					<h2 class="text-left">Highlight Word</h2>
+					<form id="form-highlight">
 						<div class="container">
 							<div class="row">
 									<div class="form-group">
-										<label for="regex">RegEx</label>
-										<input type="text" class="form-control" id="regex" aria-describedby="regexHelp" placeholder="Enter RegEx">
-										<small id="regexHelp" class="form-text text-muted">Enter a valid regular expression.</small>
+										<label for="highlight">Highlight</label>
+										<input type="text" class="form-control" id="highlight" aria-describedby="highlightHelp" placeholder="Enter word">
+										<small id="highlightHelp" class="form-text text-muted">Enter a word to highlight in the document.</small>
 									</div>
 							</div><!--row-->
 							<div class="row">
-								<button type="button" class="btn btn-primary">Find First</button>
-								<button type="button" class="btn btn-primary">Find All</button>
+								<button type="button" class="btn btn-primary" onclick="highlight()">Highlight First</button>
+								<button type="button" class="btn btn-primary">Highlight All</button>
 							</div>
 						</div><!--container-->
 					</form>

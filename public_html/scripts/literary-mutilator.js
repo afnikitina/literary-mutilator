@@ -19,29 +19,23 @@ function changeToDefault() {
 	paragraphs.forEach(el => el.style.color = "#000000");
 }
 
+function replaceGeneric(flag) {
+	const find = document.getElementById("find").value;
+	const replace = document.getElementById("replace").value;
+	paragraphs = document.querySelectorAll("p");
+	paragraphs.forEach((el) => {
+		el.innerHTML = el.innerHTML.replace(new RegExp(find,flag), replace);
+	});
+}
 
+function replaceFirst() {
+	replaceGeneric("i");
+}
 
+function replaceAll() {
+	replaceGeneric("gi");
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-// we assume that this input is a valid regular expression
-// function findPattern(pattern) {
-// 	// trip the string and remove leading and trailing slashed
-// 	pattern = pattern.trim();
-//
-// 	let strLen = pattern.length;
-// 	if (str.charAt(0) === '/' && str.charAt(strLen-1)) {
-// 		pattern = pattern.substring(1, strLen-2);
-// 	}
-//
-// }
+function resetAll() {
+	window.location.reload(true);
+}
