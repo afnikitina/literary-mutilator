@@ -11,14 +11,14 @@
 	</head>
 	<body>
 
-		<p>Suspendisse laoreet eleifend justo nec elementum. Quisque ac malesuada turpis, et suscipit neque. Maecenas bibendum velit risus, nec tempus lacus sodales id. Praesent lacinia tristique ipsum id maximus. Nulla ultricies sodales hendrerit. Sed id eros cursus, ornare urna quis, tristique orci. Nunc ex dui, hendrerit a aliquam eu, iaculis in leo. Suspendisse nec ante elementum, suscipit nunc eget, mattis lectus. Donec non quam odio. Maecenas gravida ante et turpis ullamcorper, in malesuada nibh hendrerit. Morbi tincidunt lobortis nisl. Vestibulum accumsan ornare lacus. Fusce velit erat, commodo a tempor sed, mattis eget mi. Nunc tortor lectus, venenatis quis turpis vel, tempus cursus felis. Nulla at scelerisque dui. Suspendisse finibus euismod tellus, vitae semper diam.</p>
-		<p>In condimentum id ipsum in malesuada. Etiam ultrices aliquet erat. Maecenas sit amet leo tincidunt, aliquam ipsum vel, eleifend nisi. Donec vel tortor in quam suscipit scelerisque. Donec vitae lacus risus. Morbi scelerisque, erat quis aliquam cursus, sem nisi placerat quam, a faucibus massa ipsum nec lectus. Suspendisse diam nisl, auctor at egestas eu, congue a mi. Ut nec sagittis nisi. Curabitur gravida odio at est dictum feugiat. Pellentesque elementum feugiat ligula ac finibus. Praesent justo mauris, lobortis at hendrerit vel, vehicula id dolor. Cras eu vehicula nulla.</p>
-		<p>Quisque tristique tellus a nisi convallis, at gravida justo finibus. Praesent at dolor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In aliquet pulvinar mi non pretium. Proin ultricies fringilla urna, sit amet tincidunt purus consectetur hendrerit. Pellentesque rhoncus lectus facilisis auctor scelerisque. Nam vehicula, purus ut rutrum malesuada, purus justo volutpat nunc, consequat hendrerit neque sem semper mauris. Phasellus quis est a sem fermentum iaculis. Integer ornare est dui, mattis faucibus mauris bibendum vitae. Fusce interdum congue mauris, ac bibendum lectus imperdiet vel. Phasellus rhoncus ligula at interdum auctor.</p>
+		<p id="first">Suspendisse laoreet eleifend justo nec elementum. Quisque ac malesuada turpis, et suscipit neque. Maecenas bibendum velit risus, nec tempus lacus sodales id. Praesent lacinia tristique ipsum id maximus. Nulla ultricies sodales hendrerit. Sed id eros cursus, ornare urna quis, tristique orci. Nunc ex dui, hendrerit a aliquam eu, iaculis in leo. Suspendisse nec ante elementum, suscipit nunc eget, mattis lectus. Donec non quam odio. Maecenas gravida ante et turpis ullamcorper, in malesuada nibh hendrerit. Morbi tincidunt lobortis nisl. Vestibulum accumsan ornare lacus. Fusce velit erat, commodo a tempor sed, mattis eget mi. Nunc tortor lectus, venenatis quis turpis vel, tempus cursus felis. Nulla at scelerisque dui. Suspendisse finibus euismod tellus, vitae semper diam.</p>
+		<p id="second">In condimentum id ipsum in malesuada. Etiam ultrices aliquet erat. Maecenas sit amet leo tincidunt, aliquam ipsum vel, eleifend nisi. Donec vel tortor in quam suscipit scelerisque. Donec vitae lacus risus. Morbi scelerisque, erat quis aliquam cursus, sem nisi placerat quam, a faucibus massa ipsum nec lectus. Suspendisse diam nisl, auctor at egestas eu, congue a mi. Ut nec sagittis nisi. Curabitur gravida odio at est dictum feugiat. Pellentesque elementum feugiat ligula ac finibus. Praesent justo mauris, lobortis at hendrerit vel, vehicula id dolor. Cras eu vehicula nulla.</p>
+		<p id="third">Quisque tristique tellus a nisi convallis, at gravida justo finibus. Praesent at dolor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In aliquet pulvinar mi non pretium. Proin ultricies fringilla urna, sit amet tincidunt purus consectetur hendrerit. Pellentesque rhoncus lectus facilisis auctor scelerisque. Nam vehicula, purus ut rutrum malesuada, purus justo volutpat nunc, consequat hendrerit neque sem semper mauris. Phasellus quis est a sem fermentum iaculis. Integer ornare est dui, mattis faucibus mauris bibendum vitae. Fusce interdum congue mauris, ac bibendum lectus imperdiet vel. Phasellus rhoncus ligula at interdum auctor.</p>
 
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<h2 class="text-center">Find / Replace</h2>
 					<form id="form-replace">
 						<div class="container">
@@ -27,46 +27,57 @@
 									<div class="form-group">
 										<label for="find">Find</label>
 										<input type="text" class="form-control" id="find" aria-describedby="findHelp" placeholder="Replace this pattern">
-										<small id="findHelp" class="form-text text-muted">Please enter the pattern to replace.</small>
+										<small id="findHelp" class="form-text text-muted">Enter the pattern to replace.</small>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="replace">Replace</label>
 										<input type="text" class="form-control" id="replace" aria-describedby="replaceHelp" placeholder="with this pattern">
-										<small id="replaceHelp" class="form-text text-muted">Please enter the pattern to replace with.</small>
+										<small id="replaceHelp" class="form-text text-muted">Enter the pattern to replace with.</small>
 									</div>
 								</div>
 							</div><!--row-->
 							<div class="row">
-								<button type="button" class="btn btn-primary">Replace Next</button>
+								<button type="button" class="btn btn-primary">Replace First</button>
 								<button type="button" class="btn btn-primary">Replace All</button>
 								<button type="button" class="btn btn-warning">Reset</button>
 							</div>
 						</div><!--container-->
 					</form>
 				</div>
-				<div class="col-md-3">
-					<h2>Change Color</h2>
+				<div class="col-md-5">
+					<h2 class="text-center">Change Color</h2>
 					<form id="change-color">
 						<div class="container">
 							<div class="row">
-
-								<div class="row">
-									<button type="button" class="btn btn-danger">Change to Red</button>
-									<button type="button" class="btn btn-primary">Change to Blue</button>
-									<button type="button" class="btn btn-success">Change to Green</button>
-								</div>
-
-
+								<section>Click the button to change font of the document paragraphs to the corresponding color.</section>
+							</div><!--row-->
+							<div class="row">
+								<button type="button" class="btn btn-danger" onclick="changeToRed()">Red</button>
+								<button type="button" class="btn btn-primary" onclick="changeToBlue()">Blue</button>
+								<button type="button" class="btn btn-success" onclick="changeToGreen()">Green</button>
+								<button type="button" class="btn btn-warning" onclick="changeToDefault()">Reset</button>
 							</div><!--row-->
 						</div><!--container-->
 					</form>
 				</div>
 				<div class="col-md-3">
-					<h2>RegEx</h2>
+					<h2 class="text-left">Regular Expressions</h2>
 					<form id="use-regex">
-
+						<div class="container">
+							<div class="row">
+									<div class="form-group">
+										<label for="regex">RegEx</label>
+										<input type="text" class="form-control" id="regex" aria-describedby="regexHelp" placeholder="Enter RegEx">
+										<small id="regexHelp" class="form-text text-muted">Enter a valid regular expression.</small>
+									</div>
+							</div><!--row-->
+							<div class="row">
+								<button type="button" class="btn btn-primary">Find First</button>
+								<button type="button" class="btn btn-primary">Find All</button>
+							</div>
+						</div><!--container-->
 					</form>
 				</div><!--row-->
 			</div><!--container-fluid-->
